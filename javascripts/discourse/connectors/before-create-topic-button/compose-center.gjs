@@ -404,15 +404,13 @@ export default class ComposeCenter extends Component {
                     @action={{this.newMessage}}
                   />
                 {{/if}}
-                {{#if this.siteSettings.chat_enabled}}
-                  {{#if this.currentUser.can_direct_message}}
-                    <DButton
-                      @class="btn btn-primary new-chat-message"
-                      @icon="comment"
-                      @translatedLabel={{i18n "js.chat.title_capitalized"}}
-                      @action={{this.newChatMessage}}
-                    />
-                  {{/if}}
+                {{#if this.currentUser.can_direct_message}}
+                  <DButton
+                    @class="btn btn-primary new-chat-message"
+                    @icon="comment"
+                    @translatedLabel={{i18n "js.chat.title_capitalized"}}
+                    @action={{this.newChatMessage}}
+                  />
                 {{/if}}
               </div>
               {{#if this.hasPendingPost}}
