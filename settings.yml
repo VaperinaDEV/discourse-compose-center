@@ -1,6 +1,0 @@
-new_topic_button_icon:
-  default: "plus"
-new_topic_button_text:
-  default: "New Topic"
-new_topic_button_title:
-  default: "Create a new topic"
