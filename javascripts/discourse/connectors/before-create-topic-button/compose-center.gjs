@@ -190,15 +190,7 @@ export default class ComposeCenter extends Component {
   get createTopicLabel() {
     return this.userHasDraft
       ? I18n.t("topic.open_draft")
-      : settings.new_topic_button_text;
-  }
-
-  get createTopicTitle() {
-    if (!this.userHasDraft && settings.new_topic_button_title.length) {
-      return settings.new_topic_button_title;
-    } else {
-      return this.createTopicLabel;
-    }
+      : I18n.t("topic.create");
   }
 
   get showDisabledTooltip() {
@@ -375,8 +367,7 @@ export default class ComposeCenter extends Component {
                     <DButton
                       @action={{this.createTopic}}
                       @translatedLabel={{this.createTopicLabel}}
-                      @translatedTitle={{this.createTopicTitle}}
-                      @icon={{settings.new_topic_button_icon}}
+                      @icon="plus"
                       id="publish-create-topic"
                       class={{concatClass
                         (if this.userHasDraft "open-draft")
