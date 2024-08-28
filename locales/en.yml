@@ -1,0 +1,10 @@
+en:
+  theme_metadata:
+    description: ""
+  composecenter:
+    menu_button_label: "Compose"
+    profile_button_title: "Profile settings"
+    interface_button_title: "Interface settings"
+    account_button_title: "Account settings"
+    pending_post_button_label: "Pending posts"
+  button_disabled_tooltip: You don't have permission to create topics here.
