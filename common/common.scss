@@ -36,10 +36,7 @@
         @supports (filter: blur(10px)) {
           opacity: 1;
           filter: blur(30px);
-          transform: scale(1.5);
-          .mobile-view & {
-            transform: scale(2.5);
-          }
+          transform: scale(2.5);
         }
       }
     }
