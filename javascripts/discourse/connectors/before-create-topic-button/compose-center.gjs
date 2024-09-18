@@ -246,7 +246,7 @@ export default class ComposeCenter extends Component {
       @interactive={{true}}
       @triggers="click"
       @id="create-topic"
-      @icon="pencil-alt"
+      @icon="pencil"
       @label={{this.dMenuLabel}}
       @action={{this.showComposeCenter}}
       @modalForMobile={{true}}
@@ -273,7 +273,7 @@ export default class ComposeCenter extends Component {
                   {{#if this.hasDraft}}
                     <DButton
                       @class="btn btn-default btn-small"
-                      @icon="pencil-alt"
+                      @icon="pencil"
                       @translatedLabel={{i18n
                         "js.sidebar.sections.community.links.my_posts.content_drafts"
                       }}
@@ -284,7 +284,7 @@ export default class ComposeCenter extends Component {
                   {{/if}}
                   <DButton
                     @class="btn btn-default btn-small btn-icon no-text"
-                    @icon="pencil-alt"
+                    @icon="pencil"
                     @translatedTitle={{this.profileProfileButtonTitle}}
                     @action={{this.profileLink}}
                   />
@@ -305,7 +305,7 @@ export default class ComposeCenter extends Component {
                   {{#if this.hasDraft}}
                     <DButton
                       @class="btn btn-default btn-small"
-                      @icon="pencil-alt"
+                      @icon="pencil"
                       @translatedLabel={{i18n
                         "js.sidebar.sections.community.links.my_posts.content_drafts"
                       }}
@@ -316,7 +316,7 @@ export default class ComposeCenter extends Component {
                   {{/if}}
                   <DButton
                     @class="btn btn-default btn-small btn-icon no-text"
-                    @icon="pencil-alt"
+                    @icon="pencil"
                     @translatedTitle={{this.profileProfileButtonTitle}}
                     @action={{this.profileLink}}
                   />
@@ -332,7 +332,7 @@ export default class ComposeCenter extends Component {
                 title={{this.profileAccountButtonTitle}}
               >
                 {{avatar this.currentUser "huge"}}
-                {{icon "pencil-alt"}}
+                {{icon "pencil"}}
               </a>
               {{#if this.siteSettings.enable_user_status}}
                 {{#if this.currentUser.status}}
@@ -354,7 +354,7 @@ export default class ComposeCenter extends Component {
                     @action={{this.setUserStatusClick}}
                     class="btn-flat set-user-status-btn"
                   >
-                    {{icon "plus-circle"}}
+                    {{icon "circle-plus"}}
                   </DButton>
                 {{/if}}
               {{/if}}
@@ -379,7 +379,7 @@ export default class ComposeCenter extends Component {
                   <:tooltip>
                     {{#if this.showDisabledTooltip}}
                       <DTooltip
-                        @icon="info-circle"
+                        @icon="circle-info"
                         @content={{i18n (themePrefix "button_disabled_tooltip")}}
                       />
                     {{/if}}
