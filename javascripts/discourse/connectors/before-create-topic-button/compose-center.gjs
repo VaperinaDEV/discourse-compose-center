@@ -246,7 +246,7 @@ export default class ComposeCenter extends Component {
         @identifier="compose-center"
         @interactive={{true}}
         @triggers="click"
-        @id="create-topic"
+        id="create-topic"
         @icon="pencil"
         @label={{this.dMenuLabel}}
         @action={{this.showComposeCenter}}
