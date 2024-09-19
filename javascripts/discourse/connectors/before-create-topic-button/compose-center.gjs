@@ -240,23 +240,22 @@ export default class ComposeCenter extends Component {
   }
 
   <template>
-    <DMenu
-      @arrow={{false}}
-      @identifier="compose-center"
-      @interactive={{true}}
-      @triggers="click"
-      @id="create-topic"
-      @icon="pencil"
-      @label={{this.dMenuLabel}}
-      @action={{this.showComposeCenter}}
-      @modalForMobile={{true}}
-      @inline={{true}}
-      @onRegisterApi={{this.onRegisterApi}}
-    >
-      <:content>
-        <div class="compose-center">
-          {{#if this.currentUser}}
-    
+    {{#if this.currentUser}}
+      <DMenu
+        @arrow={{false}}
+        @identifier="compose-center"
+        @interactive={{true}}
+        @triggers="click"
+        id="create-topic"
+        @icon="pencil"
+        @label={{this.dMenuLabel}}
+        @action={{this.showComposeCenter}}
+        @modalForMobile={{true}}
+        @inline={{true}}
+        @onRegisterApi={{this.onRegisterApi}}
+      >
+        <:content>
+          <div class="compose-center">
             {{#if this.banner}}
               <div
                 class="compose-center__banner has-banner"
@@ -419,9 +418,9 @@ export default class ComposeCenter extends Component {
                 </div>
               {{/if}}
             </div>
-          {{/if}}
-        </div>
-      </:content>
-    </DMenu>
+          </div>
+        </:content>
+      </DMenu>
+    {{/if}}
   </template>
 }
