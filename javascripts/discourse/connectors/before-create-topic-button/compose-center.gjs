@@ -19,7 +19,14 @@ import icon from "discourse-common/helpers/d-icon";
 import i18n from "discourse-common/helpers/i18n";
 import I18n from "discourse-i18n";
 import UserStatusModal from "discourse/components/modal/user-status";
-import ChatModalNewMessage from "discourse/plugins/chat/discourse/components/chat/modal/new-message";
+
+let ChatModalNewMessage;
+
+try {
+  ChatModalNewMessage = require("discourse/plugins/chat/discourse/components/chat/modal/new-message").default;
+} catch (e) {
+  ChatModalNewMessage = null;
+}
 
 const USER_DRAFTS_CHANGED_EVENT = "user-drafts:changed";
 
