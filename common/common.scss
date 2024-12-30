@@ -216,6 +216,9 @@
 // Hide default New Topic button
 
 #create-topic {
+  &.compose-center-trigger {
+    margin-right: 0;
+  }
   &:not(.compose-center-trigger) {
     display: none !important;
   }
