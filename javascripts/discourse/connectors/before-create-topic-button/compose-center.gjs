@@ -280,9 +280,7 @@ export default class ComposeCenter extends Component {
                     <DButton
                       @class="btn btn-default btn-small"
                       @icon="pencil"
-                      @translatedLabel={{i18n
-                        "js.sidebar.sections.community.links.my_posts.content_drafts"
-                      }}
+                      @translatedLabel={{i18n "js.drafts.label"}}
                       @action={{this.draftLink}}
                     >
                       <span class="draft-count">{{this.draftCount}}</span>
@@ -312,9 +310,7 @@ export default class ComposeCenter extends Component {
                     <DButton
                       @class="btn btn-default btn-small"
                       @icon="pencil"
-                      @translatedLabel={{i18n
-                        "js.sidebar.sections.community.links.my_posts.content_drafts"
-                      }}
+                      @translatedLabel={{i18n "js.drafts.label"}}
                       @action={{this.draftLink}}
                     >
                       <span class="draft-count">{{this.draftCount}}</span>
