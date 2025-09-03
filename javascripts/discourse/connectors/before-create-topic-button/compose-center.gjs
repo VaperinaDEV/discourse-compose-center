@@ -9,6 +9,7 @@ import concatClass from "discourse/helpers/concat-class";
 import { ajax } from "discourse/lib/ajax";
 import avatar from "discourse/helpers/avatar";
 import DiscourseURL from "discourse/lib/url";
+import { optionalRequire } from "discourse/lib/utilities";
 import DMenu from "float-kit/components/d-menu";
 import DButton from "discourse/components/d-button";
 import DButtonTooltip from "discourse/components/d-button-tooltip";
@@ -20,13 +21,9 @@ import i18n from "discourse-common/helpers/i18n";
 import I18n from "discourse-i18n";
 import UserStatusModal from "discourse/components/modal/user-status";
 
-let ChatModalNewMessage;
-
-try {
-  ChatModalNewMessage = require("discourse/plugins/chat/discourse/components/chat/modal/new-message").default;
-} catch (e) {
-  ChatModalNewMessage = null;
-}
+const ChatModalNewMessage = optionalRequire(
+  "discourse/plugins/chat/discourse/components/chat/modal/new-message"
+);
 
 const USER_DRAFTS_CHANGED_EVENT = "user-drafts:changed";
 
