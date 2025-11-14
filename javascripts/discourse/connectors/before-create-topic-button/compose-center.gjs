@@ -12,7 +12,7 @@ import DiscourseURL from "discourse/lib/url";
 import { optionalRequire } from "discourse/lib/utilities";
 import DMenu from "float-kit/components/d-menu";
 import DButton from "discourse/components/d-button";
-import DButtonTooltip from "discourse/components/d-button-tooltip";
+import DButtonTooltip from "discourse/float-kit/components/d-button-tooltip";
 import DTooltip from "float-kit/components/d-tooltip";
 import Category from "discourse/models/category";
 import emoji from "discourse/helpers/emoji";
